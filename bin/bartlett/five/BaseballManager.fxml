@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="597.0" maxWidth="703.0" minHeight="300.0" minWidth="600.0" prefHeight="568.0" prefWidth="677.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bartlett.five.BaseballManagerController">
+   <center>
+      <Accordion BorderPane.alignment="CENTER">
+        <panes>
+          <TitledPane animated="false" text="Hitting and Pitching">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="531.0" prefWidth="675.0">
+                     <children>
+                        <Label layoutX="11.0" layoutY="19.0" prefHeight="17.0" prefWidth="250.0" text="Please insert total # of games played" />
+                        <Label layoutX="11.0" layoutY="73.0" prefHeight="17.0" prefWidth="250.0" text="Please insert total # of at bats" />
+                        <Label layoutX="11.0" layoutY="100.0" prefHeight="17.0" prefWidth="250.0" text="Please insert total # of singles" />
+                        <Label layoutX="11.0" layoutY="127.0" prefHeight="17.0" prefWidth="250.0" text="Please insert total # of doubles" />
+                        <Label layoutX="11.0" layoutY="154.0" prefHeight="17.0" prefWidth="250.0" text="Please insert total # of triples" />
+                        <Label layoutX="11.0" layoutY="181.0" prefHeight="17.0" prefWidth="250.0" text="Please insert total # of homeruns" />
+                        <Label layoutX="11.0" layoutY="208.0" prefHeight="17.0" prefWidth="250.0" text="Please insert total # of runs batted in" />
+                        <Label layoutX="11.0" layoutY="46.0" prefHeight="17.0" prefWidth="263.0" text="Please insert total # of plate appearances " />
+                        <Label layoutX="11.0" layoutY="235.0" prefWidth="250.0" text="Please insert total # of runs scored" />
+                        <Label layoutX="11.0" layoutY="262.0" prefHeight="17.0" prefWidth="279.0" text="Please insert total # of times hit by pitches" />
+                        <Label layoutX="11.0" layoutY="316.0" prefHeight="17.0" prefWidth="296.0" text="Please insert total # of times reached on errors" />
+                        <Label layoutX="11.0" layoutY="343.0" prefHeight="17.0" prefWidth="305.0" text="Please insert total # of hitting in a fielders choice" />
+                        <Label layoutX="11.0" layoutY="370.0" prefHeight="17.0" prefWidth="295.0" text="Please insert total # of catcher's interference" />
+                        <Label layoutX="11.0" layoutY="397.0" prefWidth="250.0" text="Please insert total # of walks" />
+                        <Label layoutX="11.0" layoutY="289.0" prefWidth="250.0" text="Please insert total # of strikeouts" />
+                        <Label layoutX="11.0" layoutY="424.0" prefHeight="17.0" prefWidth="302.0" text="Please insert total # of sacrifice hits/flies/bunts" />
+                        <Label layoutX="129.0" layoutY="1.0" prefHeight="17.0" prefWidth="70.0" text="HITTING" underline="true" />
+                        <Label layoutX="473.0" layoutY="1.0" text="PITCHING" underline="true" />
+                        <Label layoutX="367.0" layoutY="19.0" prefHeight="17.0" prefWidth="245.0" text="Please insert total # of games pitched " />
+                        <Label layoutX="367.0" layoutY="46.0" prefHeight="17.0" prefWidth="242.0" text="Please insert total # of innings pitched" />
+                        <Label layoutX="367.0" layoutY="73.0" prefHeight="17.0" prefWidth="244.0" text="Please insert total # of wins" />
+                        <Label layoutX="367.0" layoutY="100.0" prefHeight="17.0" prefWidth="246.0" text="Please insert total # of losses" />
+                        <Label layoutX="367.0" layoutY="127.0" prefHeight="17.0" prefWidth="238.0" text="Please insert total # of hits allowed" />
+                        <Label layoutX="367.0" layoutY="154.0" prefHeight="17.0" prefWidth="242.0" text="Please insert total # of runs allowed" />
+                        <Label layoutX="367.0" layoutY="181.0" prefHeight="17.0" prefWidth="244.0" text="Please insert total # of earned runs" />
+                        <Label layoutX="367.0" layoutY="208.0" prefHeight="17.0" prefWidth="244.0" text="Please insert total # of walks allowed" />
+                        <Label layoutX="367.0" layoutY="235.0" prefHeight="17.0" prefWidth="244.0" text="Please insert total # of strikeouts" />
+                        <Label layoutX="367.0" layoutY="262.0" prefHeight="17.0" prefWidth="239.0" text="Please insert total # of hit batters" />
+                        <Button fx:id="calculateButton" defaultButton="true" layoutX="419.0" layoutY="310.0" mnemonicParsing="false" onAction="#calculateStats" prefHeight="101.0" prefWidth="171.0" text="CALCULATE" textFill="#242222" />
+                        <TextField fx:id="field0" layoutX="315.0" layoutY="14.0" prefWidth="45.0" />
+                        <TextField fx:id="field1" layoutX="315.0" layoutY="41.0" prefWidth="45.0" />
+                        <TextField fx:id="field2" layoutX="315.0" layoutY="68.0" prefWidth="45.0" />
+                        <TextField fx:id="field3" layoutX="315.0" layoutY="95.0" prefWidth="45.0" />
+                        <TextField fx:id="field4" layoutX="315.0" layoutY="122.0" prefWidth="45.0" />
+                        <TextField fx:id="field5" layoutX="315.0" layoutY="149.0" prefWidth="45.0" />
+                        <TextField fx:id="field6" layoutX="315.0" layoutY="176.0" prefWidth="45.0" />
+                        <TextField fx:id="field7" layoutX="315.0" layoutY="203.0" prefWidth="45.0" />
+                        <TextField fx:id="field8" layoutX="315.0" layoutY="230.0" prefWidth="45.0" />
+                        <TextField fx:id="field9" layoutX="315.0" layoutY="257.0" prefWidth="45.0" />
+                        <TextField fx:id="field10" layoutX="315.0" layoutY="284.0" prefWidth="45.0" />
+                        <TextField fx:id="field11" layoutX="315.0" layoutY="311.0" prefWidth="45.0" />
+                        <TextField fx:id="field12" layoutX="315.0" layoutY="338.0" prefWidth="45.0" />
+                        <TextField fx:id="field13" layoutX="315.0" layoutY="365.0" prefWidth="45.0" />
+                        <TextField fx:id="field14" layoutX="315.0" layoutY="392.0" prefWidth="45.0" />
+                        <TextField fx:id="field15" layoutX="315.0" layoutY="419.0" prefWidth="45.0" />
+                        <TextField fx:id="field16" layoutX="616.0" layoutY="14.0" prefWidth="45.0" />
+                        <TextField fx:id="field17" layoutX="616.0" layoutY="41.0" prefWidth="45.0" />
+                        <TextField fx:id="field18" layoutX="616.0" layoutY="68.0" prefWidth="45.0" />
+                        <TextField fx:id="field19" layoutX="616.0" layoutY="95.0" prefWidth="45.0" />
+                        <TextField fx:id="field20" layoutX="616.0" layoutY="122.0" prefWidth="45.0" />
+                        <TextField fx:id="field21" layoutX="616.0" layoutY="149.0" prefWidth="45.0" />
+                        <TextField fx:id="field22" layoutX="616.0" layoutY="176.0" prefWidth="45.0" />
+                        <TextField fx:id="field23" layoutX="616.0" layoutY="203.0" prefWidth="45.0" />
+                        <TextField fx:id="field24" layoutX="616.0" layoutY="230.0" prefWidth="45.0" />
+                        <TextField fx:id="field25" layoutX="616.0" layoutY="257.0" prefWidth="45.0" />
+                     </children></AnchorPane>
+            </content>
+          </TitledPane>
+          <TitledPane animated="false" prefHeight="892.0" prefWidth="703.0" text="Calculated Statistics">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TextField fx:id="final0" editable="false" layoutX="6.0" layoutY="68.0" prefHeight="27.0" prefWidth="51.0" />
+                        <TextField fx:id="final1" editable="false" layoutX="57.0" layoutY="68.0" prefHeight="27.0" prefWidth="51.0" />
+                        <TextField fx:id="final2" editable="false" layoutX="108.0" layoutY="68.0" prefHeight="27.0" prefWidth="51.0" />
+                        <TextField fx:id="final5" editable="false" layoutX="261.0" layoutY="68.0" prefHeight="27.0" prefWidth="51.0" />
+                        <TextField fx:id="final3" editable="false" layoutX="159.0" layoutY="68.0" prefHeight="27.0" prefWidth="51.0" />
+                        <TextField fx:id="final4" editable="false" layoutX="210.0" layoutY="68.0" prefHeight="27.0" prefWidth="51.0" />
+                        <TextField fx:id="final6" editable="false" layoutX="312.0" layoutY="68.0" prefWidth="51.0" />
+                        <TextField fx:id="final7" editable="false" layoutX="363.0" layoutY="68.0" prefWidth="51.0" />
+                        <TextField fx:id="final8" editable="false" layoutX="414.0" layoutY="68.0" prefWidth="51.0" />
+                        <TextField fx:id="final9" editable="false" layoutX="465.0" layoutY="68.0" prefWidth="51.0" />
+                        <TextField fx:id="final10" editable="false" layoutX="516.0" layoutY="68.0" prefWidth="51.0" />
+                        <TextField fx:id="final11" editable="false" layoutX="567.0" layoutY="68.0" prefWidth="51.0" />
+                        <Label layoutX="180.0" layoutY="51.0" text="H" />
+                        <Label layoutX="278.0" layoutY="51.0" text="2B" />
+                        <Label layoutX="228.0" layoutY="51.0" text="1B" />
+                        <Label layoutX="329.0" layoutY="51.0" text="3B" />
+                        <Label layoutX="379.0" layoutY="51.0" text="HR" />
+                        <Label layoutX="429.0" layoutY="51.0" text="RBI" />
+                        <Label layoutX="486.0" layoutY="51.0" text="R" />
+                        <Label layoutX="528.0" layoutY="51.0" text="HBP" />
+                        <Label layoutX="579.0" layoutY="51.0" text="ROE" />
+                        <Label layoutX="635.0" layoutY="51.0" text="FC" />
+                        <Label layoutX="74.0" layoutY="51.0" text="PA" />
+                        <Label layoutX="125.0" layoutY="51.0" text="AB" />
+                        <Label alignment="CENTER" layoutX="23.0" layoutY="51.0" text="GP" />
+                        <TextField fx:id="final13" editable="false" layoutX="6.0" layoutY="112.0" prefWidth="51.0" />
+                        <TextField fx:id="final14" editable="false" layoutX="57.0" layoutY="112.0" prefWidth="51.0" />
+                        <TextField fx:id="final15" editable="false" layoutX="108.0" layoutY="112.0" prefWidth="51.0" />
+                        <TextField fx:id="final16" editable="false" layoutX="159.0" layoutY="112.0" prefWidth="51.0" />
+                        <TextField fx:id="final17" editable="false" layoutX="210.0" layoutY="112.0" prefWidth="51.0" />
+                        <TextField fx:id="final18" editable="false" layoutX="261.0" layoutY="112.0" prefWidth="51.0" />
+                        <TextField fx:id="final19" editable="false" layoutX="312.0" layoutY="112.0" prefWidth="51.0" />
+                        <TextField fx:id="final20" editable="false" layoutX="363.0" layoutY="112.0" prefWidth="51.0" />
+                        <TextField fx:id="final21" editable="false" layoutX="414.0" layoutY="112.0" prefWidth="51.0" />
+                        <TextField fx:id="final22" editable="false" layoutX="465.0" layoutY="112.0" prefWidth="51.0" />
+                        <TextField fx:id="final23" editable="false" layoutX="516.0" layoutY="112.0" prefWidth="51.0" />
+                        <TextField fx:id="final24" editable="false" layoutX="567.0" layoutY="112.0" prefWidth="51.0" />
+                        <TextField fx:id="final25" editable="false" layoutX="618.0" layoutY="112.0" prefWidth="51.0" />
+                        <Label layoutX="74.0" layoutY="95.0" text="BB" />
+                        <Label layoutX="129.0" layoutY="95.0" text="K" />
+                        <Label layoutX="171.0" layoutY="95.0" text="AVG" />
+                        <Label layoutX="222.0" layoutY="95.0" text="OBP" />
+                        <Label layoutX="274.0" layoutY="95.0" text="SLG" />
+                        <Label layoutX="324.0" layoutY="95.0" text="OPS" />
+                        <Label layoutX="369.0" layoutY="95.0" text="PA/BB" />
+                        <Label layoutX="424.0" layoutY="95.0" text="BB/K" />
+                        <Label layoutX="482.0" layoutY="95.0" text="TB" />
+                        <Label layoutX="522.0" layoutY="95.0" text="AB/HR" />
+                        <Label layoutX="579.0" layoutY="95.0" text="SAC" />
+                        <Label layoutX="625.0" layoutY="95.0" text="QAB%" />
+                        <Label layoutX="25.0" layoutY="95.0" text="CI" />
+                        <TextField fx:id="final12" editable="false" layoutX="618.0" layoutY="68.0" prefWidth="51.0" />
+                        <Label layoutX="25.0" layoutY="14.0" text="HITTING STATISTICS" underline="true" />
+                        <Label layoutX="25.0" layoutY="172.0" text="PITCHING STATISTICS" underline="true" />
+                        <Label layoutX="23.0" layoutY="209.0" text="GP" />
+                        <TextField fx:id="final26" editable="false" layoutX="6.0" layoutY="226.0" prefWidth="51.0" />
+                        <TextField fx:id="final27" editable="false" layoutX="57.0" layoutY="226.0" prefWidth="51.0" />
+                        <TextField fx:id="final28" editable="false" layoutX="108.0" layoutY="226.0" prefWidth="51.0" />
+                        <TextField fx:id="final29" editable="false" layoutX="159.0" layoutY="226.0" prefWidth="51.0" />
+                        <TextField fx:id="final30" editable="false" layoutX="210.0" layoutY="226.0" prefWidth="51.0" />
+                        <TextField fx:id="final31" editable="false" layoutX="261.0" layoutY="226.0" prefWidth="51.0" />
+                        <TextField fx:id="final32" editable="false" layoutX="312.0" layoutY="226.0" prefWidth="51.0" />
+                        <TextField fx:id="final33" editable="false" layoutX="363.0" layoutY="226.0" prefWidth="51.0" />
+                        <TextField fx:id="final34" editable="false" layoutX="414.0" layoutY="226.0" prefWidth="51.0" />
+                        <TextField fx:id="final35" editable="false" layoutX="465.0" layoutY="226.0" prefWidth="51.0" />
+                        <TextField fx:id="final36" editable="false" layoutX="516.0" layoutY="226.0" prefWidth="51.0" />
+                        <TextField fx:id="final37" editable="false" layoutX="567.0" layoutY="226.0" prefWidth="51.0" />
+                        <TextField fx:id="final38" editable="false" layoutX="618.0" layoutY="226.0" prefWidth="51.0" />
+                        <Label layoutX="77.0" layoutY="209.0" text="IP" />
+                        <Label layoutX="127.0" layoutY="209.0" text="W" />
+                        <Label layoutX="181.0" layoutY="209.0" text="L" />
+                        <Label layoutX="231.0" layoutY="209.0" text="H" />
+                        <Label layoutX="283.0" layoutY="209.0" text="R" />
+                        <Label layoutX="329.0" layoutY="209.0" text="ER" />
+                        <Label layoutX="380.0" layoutY="209.0" text="BB" />
+                        <Label layoutX="435.0" layoutY="209.0" text="K" />
+                        <Label layoutX="477.0" layoutY="209.0" text="HBP" />
+                        <Label layoutX="530.0" layoutY="209.0" text="ERA" />
+                        <Label layoutX="576.0" layoutY="209.0" text="WHIP" />
+                        <Label layoutX="632.0" layoutY="209.0" text="W%" />
+                     </children></AnchorPane>
+            </content>
+          </TitledPane>
+          <TitledPane animated="false" prefHeight="756.0" prefWidth="703.0" text="Statistic Definitions">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TextArea editable="false" layoutX="-1.0" prefHeight="465.0" prefWidth="221.0" text="HITTING&#10;&#10;GP: Games played&#10;&#10;PA: Plate appearances&#10;&#10;AB: At bats&#10;&#10;H: Hits&#10;&#10;1B: Singles&#10;&#10;2B: Doubles&#10;&#10;3B: Triples&#10;&#10;HR: Home runs&#10;&#10;RBI: Runs Batter In&#10;&#10;R: Runs&#10;&#10;HBP: Hit By Pitch&#10;&#10;ROE: Reached On Error&#10;&#10;FC: Hit into a Fielder's Choice&#10;&#10;QAB%: Percentage of quality at bats&#10;">
+                           <font>
+                              <Font size="12.0" />
+                           </font></TextArea>
+                        <TextArea editable="false" layoutX="219.0" prefHeight="465.0" prefWidth="230.0" text="HITTING&#10;&#10;CI: Advanced on a Catcher's &#10;      Interference &#10;&#10;BB: Base on Balls (walks)&#10;&#10;K: Strikeouts&#10;&#10;AVG: Batting Average&#10;&#10;OBP: On-base percentage&#10;&#10;SLG: Slugging percentage&#10;&#10;OPS: OBP+SLG&#10;&#10;PA/BB: Plate appearances per walk&#10;&#10;BB/K: Walks per strikeout&#10;&#10;XBH: Extra-base hits&#10;&#10;TB: Total Bases&#10;&#10;AB/HR: At bats per home run&#10;&#10;SAC: Total sacrifice bunts, flies, and&#10;          hits">
+                           <font>
+                              <Font size="12.0" />
+                           </font></TextArea>
+                        <TextArea editable="false" layoutX="448.0" prefHeight="465.0" prefWidth="228.0" text="PITCHING&#10;&#10;GP: Games Pitched&#10;&#10;IP: Innings Pitched&#10;&#10;W: Wins&#10;&#10;L: Losses &#10;&#10;H: Hits&#10;&#10;R: Runs allowed&#10;&#10;ER: Earned Runs allowed&#10;&#10;BB: Base on Balls (walks)&#10;&#10;K: Strikeouts&#10;&#10;HBP: Hit batters&#10;&#10;ERA: Earned Run Average&#10;&#10;WHIP: Walks and Hits per Inning&#10;            Pitched&#10;&#10;W%: Win Percentage">
+                           <font>
+                              <Font size="12.0" />
+                           </font></TextArea>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </TitledPane>
+        </panes>
+      </Accordion>
+   </center>
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem fx:id="save" mnemonicParsing="false" onAction="#saveStats" text="Save" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+</BorderPane>
