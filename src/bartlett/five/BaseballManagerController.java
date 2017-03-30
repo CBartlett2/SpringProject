@@ -287,7 +287,8 @@ public class BaseballManagerController {
 		final17.setText(Double.toString(result));
 	}
 
-	//DONE
+	//takes all types of hits and multiplies them by however bases the require and then sums them
+	//Single=1, Double=2, Triple=3, Homerun=4
 	public void calculateSLG(){
 		double num3 = Double.parseDouble(field3.getText());
 		double num4 = Double.parseDouble(field4.getText());
